@@ -1,0 +1,272 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background-color: #f3e3e3;
+    color: #333;
+    min-height: 100vh;
+}
+
+/* Estilos del header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ece3e3;
+    background-image: url(https://www.jackdanielsandcoca-cola.com/wp-content/themes/jack-and-coke/src/assets/footer-fizz.png);
+    height: 150px;
+    width: 100%;
+}
+
+header .logo img {
+    width: 300px;
+    height: 300px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Formulario de contacto */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+/* Estilo para el contenedor principal */
+.contenedor-max {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilo para la sección de contacto */
+.contacto {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+/* Títulos */
+.contacto__titulo--h1 {
+    font-size: 2.5rem;
+    color: #c8102e; /* Rojo Coca-Cola */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contacto__container__izquierda__titulo--h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Estilos de formulario */
+.contacto__container__izquierda__cont__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto__container__izquierda__cont__form__box {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.contacto__container__izquierda__cont__form__boton {
+    text-align: right;
+}
+
+.btn {
+    background-color: #c8102e; /* Rojo Coca-Cola */
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #a60f2b; /* Color más oscuro al pasar el mouse */
+}
+
+.contacto__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+.contacto__container__izquierda {
+    flex: 0 0 55%; /* Establece el ancho de la sección izquierda */
+}
+
+.contacto__container__derecha {
+    flex: 0 0 35%; /* Establece el ancho de la sección derecha */
+    margin-top: 20px;
+    margin-left: auto;
+}
+
+.contacto__container__derecha__detalles {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contacto__container__derecha__detalles h2 {
+    font-size: 1.5rem;
+    color: #c8102e;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+/* Estilos del mapa */
+.mapa {
+    margin-top: 40px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mapa__container__titulo--h4 {
+    font-size: 1.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.mapa__gps {
+    text-align: center;
+}
+
+.mapa__gps--iframe {
+    width: 100%;
+    height: 450px;
+    border-radius: 8px;
+    border: none;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 40px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.footer-links .column {
+    flex-basis: 30%;
+}
+
+.footer-links h3 {
+    margin-bottom: 15px;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.social-media a {
+    margin: 0 10px;
+}
+
+.social-media img {
+    width: 30px;
+}
+
+.location {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+footer p {
+    text-align: center;
+}
+
+/* Efectos para botones y enlaces */
+button, .card a, .news-card a, nav ul li a {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover, .card a:hover, .news-card a:hover, nav ul li a:hover {
+    background-color: #e50914;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:active, .card a:active, .news-card a:active, nav ul li a:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

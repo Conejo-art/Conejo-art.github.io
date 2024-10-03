@@ -1,0 +1,197 @@
+    /* Estilos generales */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html, body {
+        height: 100%;
+        margin: 0;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        font-family: Arial, sans-serif;
+        background-color: #ffffff;
+        color: #333;
+        min-height: 100vh;
+    }
+
+    /* Estilos del header */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #ddd;
+        background-image: url(https://www.jackdanielsandcoca-cola.com/wp-content/themes/jack-and-coke/src/assets/footer-fizz.png);
+        height: 150px;
+        width: 2855px;
+    }
+
+    header .logo img {
+        width: 300px;
+        height: 300px;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 0 15px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+    }
+    /* Estilos para la sección de experiencias */
+    .experiencias {
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .experiencias h1 {
+        width: 100%;
+        text-align: center;
+        font-size: 2.5em;
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    .card {
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        padding: 20px;
+        width: 50%; /* Ajusta para que dos tarjetas se alineen una al lado de la otra */
+        transition: transform 0.3s ease;
+    }
+
+    .card img {
+        width: 100%;
+        height: 400px; /* Aumentado para que las imágenes sean más grandes */
+        object-fit: cover; /* Ajusta la imagen para cubrir el espacio */
+        border-radius: 20px;
+        margin-bottom: 15px;
+    }
+
+    .card h2 {
+        font-size: 1.8em;
+        margin-bottom: 10px;
+        color: #333;
+    }
+
+    .card p {
+        color: #666;
+        margin-bottom: 20px;
+    }
+
+    .card a {
+        text-decoration: none;
+        color: #fff;
+        background-color: #000;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card a:hover {
+        background-color: #e50914;
+        transform: scale(1.05);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .card:hover {
+        transform: translateY(-5px); /* Efecto hover para toda la tarjeta */
+    }
+
+    /* Footer */
+    footer {
+        background-color: #000;
+        color: #fff;
+        padding: 40px;
+    }
+
+    .footer-links {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+
+    .footer-links .column {
+        flex-basis: 30%;
+    }
+
+    .footer-links h3 {
+        margin-bottom: 15px;
+    }
+
+    .footer-links ul {
+        list-style: none;
+    }
+
+    .footer-links ul li a {
+        color: #fff;
+        text-decoration: none;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .social-media {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .social-media a {
+        margin: 0 10px;
+    }
+
+    .social-media img {
+        width: 30px;
+    }
+
+    .location {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    footer p {
+        text-align: center;
+    }
+
+    /* Efectos para botones y enlaces */
+    button, .card a, .news-card a, nav ul li a {
+        padding: 10px 20px;
+        background-color: #000; /* Fondo del botón */
+        color: #fff; /* Color del texto */
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    /* Efecto hover: cuando el mouse está sobre el botón */
+    button:hover, .card a:hover, .news-card a:hover, nav ul li a:hover {
+        background-color: #e50914;
+        transform: scale(1.05);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Efecto active: cuando se hace clic en el botón */
+    button:active, .card a:active, .news-card a:active, nav ul li a:active {
+        transform: scale(0.95); /* Reduce ligeramente el tamaño al hacer clic */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Reduce la sombra */
+    }
